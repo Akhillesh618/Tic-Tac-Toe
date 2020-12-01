@@ -20,6 +20,7 @@
       height: 500px; */
     animation: opacity 1s ease;
   }
+
   
   @keyframes opacity {
     from {
@@ -35,7 +36,9 @@
       opacity: 100%;
     }
   }
-  
+
+
+
   .title {
     text-align: center;
   }
@@ -64,11 +67,12 @@
     /* position: relative; */
     background: #ffaf7a;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat( 6, 1fr  );
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 5px;
+    grid-gap: 4px;
     margin-top: 50px;
   }
+  
   
   .game-cell {
     /* background:#14BDAC; */
@@ -78,22 +82,24 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     /* animation: opacity 2s ease, position 2s ease; */
   }
+  
+
   
   /*  */
   .x::before {
     content: "✕";
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     animation: opacity 0.4s ease;
   }
   
   .o::before {
     content: "○";
-    font-size: 100px;
+    font-size: 80px;
     color: cornsilk;
     animation: opacity 0.4s ease;
   }
